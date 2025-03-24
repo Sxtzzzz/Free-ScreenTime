@@ -10,7 +10,7 @@ function sendToNtfy(url) {
       body: JSON.stringify({ message: `URL visitée : ${url}` }), // Message à envoyer
     })
       .then(response => response.json())
-      .then(data => console.log("URL envoyée ntfy :", data))
+      .then(data => console.log("URL envoyée à ntfy :", data))
       .catch(error => console.error("Erreur lors de l'envoi à ntfy:", error));
   }
   
